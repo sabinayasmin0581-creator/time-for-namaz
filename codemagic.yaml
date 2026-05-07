@@ -13,6 +13,6 @@ workflows:
       - name: Build APK
         script: |
           cd timefornamaz
-          flutter build apk --debug --no-tree-shake-icons
+          flutter build apk --debug --no-tree-shake-icons --no-pub
     artifacts:
       - timefornamaz/build/app/outputs/flutter-apk/app-debug.apk
