@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373615291207",
+    "project_id": "time-for-namaz",
+    "storage_bucket": "time-for-namaz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373615291207:android:50da3ba0d95a33b8377a62",
+        "android_client_info": {
+          "package_name": "com.zavau.timefornamaz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSJ5bZjBGxalQZeKdprzRQrBd4AcWB2zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
