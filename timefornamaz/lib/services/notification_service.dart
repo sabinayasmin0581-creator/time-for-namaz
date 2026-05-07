@@ -52,11 +52,13 @@ class NotificationService {
       await _notifications.zonedSchedule(id, title, body,
         tz.TZDateTime.from(scheduledTime, tz.local), details, payload: 'namaz',
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
         matchDateTimeComponents: DateTimeComponents.time);
     } else {
       await _notifications.zonedSchedule(id, title, body,
         tz.TZDateTime.from(scheduledTime, tz.local), details, payload: 'namaz',
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle);
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime);
     }
   }
 
@@ -74,11 +76,13 @@ class NotificationService {
       await _notifications.zonedSchedule(id, title, body,
         tz.TZDateTime.from(scheduledTime, tz.local), details, payload: 'quran',
         androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime,
         matchDateTimeComponents: DateTimeComponents.time);
     } else {
       await _notifications.zonedSchedule(id, title, body,
         tz.TZDateTime.from(scheduledTime, tz.local), details, payload: 'quran',
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle);
+        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        uiLocalNotificationDateInterpretation: UILocalNotificationDateInterpretation.absoluteTime);
     }
   }
 

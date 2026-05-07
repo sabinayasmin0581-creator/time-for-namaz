@@ -22,7 +22,7 @@ class AppTheme {
           elevation: 0,
           centerTitle: true,
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: white,
           elevation: 4,
           shadowColor: shadowColor,
