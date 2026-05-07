@@ -7,8 +7,12 @@ workflows:
       java: 17
     scripts:
       - name: Get Flutter packages
-        script: flutter pub get
+        script: |
+          cd timefornamaz
+          flutter pub get
       - name: Build APK
-        script: flutter build apk --debug --no-tree-shake-icons
+        script: |
+          cd timefornamaz
+          flutter build apk --debug --no-tree-shake-icons
     artifacts:
-      - build/app/outputs/flutter-apk/app-debug.apk
+      - timefornamaz/build/app/outputs/flutter-apk/app-debug.apk
